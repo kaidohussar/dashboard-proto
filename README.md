@@ -1,1 +1,7 @@
-# Dashboard prototype made with react, redux, recharts 
+# Dashboard prototype
+
+Keywords:
+* React
+* Redux
+* Recharts
+

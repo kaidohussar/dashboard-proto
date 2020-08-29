@@ -2,53 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9ed9efb-02a0-44f0-bb28-62543f96def8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dashboard-proto.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/actions/graphs.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/actions/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/Graph/GraphSelection/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/Graph/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/Graph/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/PageHeader/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/PageHeader/page-header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/PageInfo/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/PageInfo/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/containers/App/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/frames/FrameMain/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/frames/FrameMain/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/middleware/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/middleware/logger.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/GraphsModel.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/reducers/graphs.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/reducers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/reducers/state.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/ui-components/Breadcrumbs/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/ui-components/Breadcrumbs/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/ui-components/ButtonWithIcon/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/ui-components/DropdownWithArrow/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/ui-components/TitleWithIcon/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/ui-components/TitleWithIcon/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/utils/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/global.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/react-redux.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,22 +75,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598686440406</updated>
-      <workItem from="1598686442079" duration="35722000" />
+      <workItem from="1598686442079" duration="35809000" />
     </task>
+    <task id="LOCAL-00001" summary="initial push">
+      <created>1598735315913</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598735315913</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial push" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial push" />
   </component>
   <component name="WindowStateProjectService">
     <state x="3314" y="-270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598733390286">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
     <state x="3314" y="-270" key="#com.intellij.fileTypes.FileTypeChooser/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598733390286" />
-    <state x="3171" y="-503" key="CommitChangelistDialog2" timestamp="1598701908837">
+    <state x="3171" y="-503" key="CommitChangelistDialog2" timestamp="1598735315585">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
-    <state x="3171" y="-503" key="CommitChangelistDialog2/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598701908837" />
+    <state x="3171" y="-503" key="CommitChangelistDialog2/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598735315585" />
     <state width="3318" height="465" key="GridCell.Tab.0.bottom" timestamp="1598733944416">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
@@ -153,6 +119,10 @@
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
     <state width="3318" height="465" key="GridCell.Tab.0.right/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598733944415" />
+    <state x="3200" y="-339" key="Vcs.Push.Dialog.v2" timestamp="1598735317949">
+      <screen x="1920" y="-1012" width="3360" height="1867" />
+    </state>
+    <state x="3200" y="-339" key="Vcs.Push.Dialog.v2/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598735317949" />
     <state x="2020" y="-912" width="3160" height="1667" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598732677579">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
@@ -161,10 +131,10 @@
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
     <state x="2020" y="-912" width="3160" height="1667" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598722146325" />
-    <state x="3200" y="-324" width="604" height="490" key="find.popup" timestamp="1598735224035">
+    <state x="3200" y="-324" width="604" height="490" key="find.popup" timestamp="1598735290885">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
-    <state x="3200" y="-324" width="604" height="490" key="find.popup/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598735224035" />
+    <state x="3200" y="-324" width="604" height="490" key="find.popup/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598735290885" />
     <state x="3265" y="-575" width="670" height="676" key="search.everywhere.popup" timestamp="1598723729788">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
