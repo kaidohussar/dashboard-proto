@@ -1,0 +1,27 @@
+@import './variables.scss';
+
+@mixin link-button() {
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    line-height: normal;
+    cursor: pointer;
+    -moz-user-select: text;
+    outline: none;
+    &::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+    }
+}
+
+@mixin label() {
+    letter-spacing: .8px;
+    line-height: $gridunit * 3;
+    font-size: $font-size-small;
+    svg {
+        width: 18px; height: 18px; margin-left: $gridunit / 2;
+    }
+}

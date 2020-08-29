@@ -1,0 +1,19 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+.breadcrumbs {
+    &-wrapper { display: flex; }
+    &-item {
+        @include link-button();
+        @include label();
+        font-weight: $font-weight-light;
+        margin-right: $gridunit;
+        text-transform: uppercase;
+        color: $color-grey-darker;
+        display: flex;
+        svg {
+            width: 14px; height: 14px;
+            margin: 4px 0 0 $gridunit;
+        }
+    }
+}

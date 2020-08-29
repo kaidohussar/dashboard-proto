@@ -1,1 +1,1 @@
-# dashboard-proto
+# Dashboard prototype made with react, redux, recharts 

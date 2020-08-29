@@ -1,0 +1,20 @@
+@import '../../../assets/styles/variables';
+
+.title-with-icon {
+    display: flex; align-items: center;
+    H2 { margin-left: $gridunit; font-weight: $font-weight-light; font-size: $gridunit * 4; letter-spacing: .7px; }
+    &-icon {
+        width: $gridunit * 8;
+        height: $gridunit * 8;
+        border-radius: $base-radius;
+        background: $color-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            width: $gridunit * 4;
+            height: $gridunit * 4;
+            color: $color-pink;
+        }
+    }
+}

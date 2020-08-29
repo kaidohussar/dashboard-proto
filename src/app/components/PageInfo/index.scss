@@ -1,0 +1,15 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+
+.page-info {
+    &-upper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-items-item.MuiButtonBase-root {
+            @include label();
+            color: $color-primary;
+            svg { width: 18px; height: 18px; }
+        }
+    }
+}

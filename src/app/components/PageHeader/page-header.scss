@@ -1,0 +1,17 @@
+@import '../../../assets/styles/variables';
+
+header {
+    height: $gridunit * 8;
+    background: $color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 $gridunit * 2;
+}
+
+.page-header-actions {
+    display: flex;
+    &-user.MuiButtonBase-root { min-width: $gridunit * 4; }
+    svg, SPAN { color: $color-white-opacity}
+    svg { width: $gridunit * 4; height: $gridunit * 4; }
+}
