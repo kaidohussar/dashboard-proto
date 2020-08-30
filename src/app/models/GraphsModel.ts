@@ -1,6 +1,39 @@
-/** Graph item model definitions **/
+/** Graphs item model definitions **/
+
+export enum GraphType {
+  AVG_RESPONSE_DELAY = 'AVG_RESPONSE_DELAY',
+  LAST_QUEUE_SIZE = 'LAST_QUEUE_SIZE',
+  AVG_PAYLOAD_SIZE = 'AVG_PAYLOAD_SIZE',
+  DEAD_LETTER_QUEUE = 'DEAD_LETTER_QUEUE',
+}
+
+export interface IGraphDataMain {
+  type: GraphType,
+  isSelected: boolean;
+  data: IGraphData[];
+}
+
+export type GraphDataItemType = 'default' | 'config-change';
+export type GraphDataItemUnit = 'ms' | 'kb';
+
+export interface IGraphData {
+  date: number;
+  type: GraphDataItemType,
+  label: string;
+  value: number;
+  unit?: GraphDataItemUnit;
+}
+
+export interface IGraphs {
+  averageResponseDelayData: IGraphDataMain;
+  lastQueueSizeData: IGraphDataMain;
+  averagePayloadSize: IGraphDataMain;
+  deadLetterQueue: IGraphDataMain;
+}
 
 export interface GraphsModel {
-  status: 'pending' | 'completed';
-  graphs: any[];
+  isFetching: boolean;
+  endReached: boolean;
+  error: '';
+  graphs: IGraphs | null;
 }

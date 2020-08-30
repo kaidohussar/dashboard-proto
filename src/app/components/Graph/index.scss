@@ -1,0 +1,5 @@
+@import '../../../assets/styles/variables';
+
+.graphs-wrapper {
+    margin-top: $gridunit * 2; min-height: 600px; position: relative;
+}

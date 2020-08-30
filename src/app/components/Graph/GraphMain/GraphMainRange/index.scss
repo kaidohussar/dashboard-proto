@@ -1,0 +1,21 @@
+@import '../../../../../assets/styles/variables';
+
+.graph-main-range {
+    .recharts-responsive-container {
+        margin-left: -10px;
+    }
+    .config-change-cog {
+        width: 40px;
+        height: 40px;
+        &-wrapper {
+            width: 24px;
+            height: 24px;
+            align-items: center;
+            justify-content: center;
+            background: $color-background;
+            padding: $gridunit / 2;
+            border-radius: 50%;
+            border: 4px solid rgba($color-primary, .3);
+        }
+    }
+}

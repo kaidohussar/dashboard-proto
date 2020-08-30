@@ -18,6 +18,5 @@ export function configureStore(initialState?: RootState): Store<RootState> {
       store.replaceReducer(nextReducer);
     });
   }
-
   return store;
 }

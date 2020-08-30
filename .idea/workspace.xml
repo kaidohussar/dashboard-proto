@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9ed9efb-02a0-44f0-bb28-62543f96def8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/components/Graph/GraphMain/GraphMainOverview/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/Graph/GraphMain/GraphMainOverview/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/Graph/GraphMain/GraphMainRange/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/Graph/GraphMain/GraphMainRange/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/Graph/GraphMain/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/mock-data-generators/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/ui-components/ContentLoading/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/ui-components/ContentLoading/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/actions/graphs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/graphs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Graph/GraphSelection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Graph/GraphMain/GraphMainSelection/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Graph/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Graph/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Graph/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Graph/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/containers/App/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/containers/App/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/models/GraphsModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/GraphsModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/reducers/graphs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/reducers/graphs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/middleware" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/components/Graph/GraphMain/GraphMainRange" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -34,12 +51,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/app/middleware" />
+      <recent name="$PROJECT_DIR$/src/app/components/Graph/GraphMain/GraphMainRange" />
       <recent name="$PROJECT_DIR$/src/app/ui-components" />
+      <recent name="$PROJECT_DIR$/src/app/middleware" />
       <recent name="$PROJECT_DIR$/src/app/components" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/components/Graph/GraphMain" />
+      <recent name="$PROJECT_DIR$/src/app" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.deploy">
     <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -75,7 +98,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598686440406</updated>
-      <workItem from="1598686442079" duration="35809000" />
+      <workItem from="1598686442079" duration="47380000" />
+      <workItem from="1598778339977" duration="13478000" />
     </task>
     <task id="LOCAL-00001" summary="initial push">
       <created>1598735315913</created>
@@ -84,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598735315913</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial push">
+      <created>1598735392886</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598735392886</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,45 +130,45 @@
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
     <state x="3314" y="-270" key="#com.intellij.fileTypes.FileTypeChooser/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598733390286" />
-    <state x="3171" y="-503" key="CommitChangelistDialog2" timestamp="1598735315585">
+    <state x="3171" y="-503" key="CommitChangelistDialog2" timestamp="1598735392711">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
-    <state x="3171" y="-503" key="CommitChangelistDialog2/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598735315585" />
-    <state width="3318" height="465" key="GridCell.Tab.0.bottom" timestamp="1598733944416">
+    <state x="3171" y="-503" key="CommitChangelistDialog2/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598735392711" />
+    <state width="3318" height="463" key="GridCell.Tab.0.bottom" timestamp="1598778442433">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
-    <state width="3318" height="465" key="GridCell.Tab.0.bottom/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598733944416" />
-    <state width="3318" height="465" key="GridCell.Tab.0.center" timestamp="1598733944414">
+    <state width="3318" height="463" key="GridCell.Tab.0.bottom/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598778442433" />
+    <state width="3318" height="463" key="GridCell.Tab.0.center" timestamp="1598778442432">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
-    <state width="3318" height="465" key="GridCell.Tab.0.center/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598733944414" />
-    <state width="3318" height="465" key="GridCell.Tab.0.left" timestamp="1598733944414">
+    <state width="3318" height="463" key="GridCell.Tab.0.center/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598778442432" />
+    <state width="3318" height="463" key="GridCell.Tab.0.left" timestamp="1598778442432">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
-    <state width="3318" height="465" key="GridCell.Tab.0.left/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598733944414" />
-    <state width="3318" height="465" key="GridCell.Tab.0.right" timestamp="1598733944415">
+    <state width="3318" height="463" key="GridCell.Tab.0.left/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598778442432" />
+    <state width="3318" height="463" key="GridCell.Tab.0.right" timestamp="1598778442433">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
-    <state width="3318" height="465" key="GridCell.Tab.0.right/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598733944415" />
-    <state x="3200" y="-339" key="Vcs.Push.Dialog.v2" timestamp="1598735317949">
+    <state width="3318" height="463" key="GridCell.Tab.0.right/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598778442433" />
+    <state x="3200" y="-339" key="Vcs.Push.Dialog.v2" timestamp="1598735394697">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
-    <state x="3200" y="-339" key="Vcs.Push.Dialog.v2/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598735317949" />
-    <state x="2020" y="-912" width="3160" height="1667" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598732677579">
+    <state x="3200" y="-339" key="Vcs.Push.Dialog.v2/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598735394697" />
+    <state x="2020" y="-912" width="3160" height="1667" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598765271639">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
-    <state x="2020" y="-912" width="3160" height="1667" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598732677579" />
+    <state x="2020" y="-912" width="3160" height="1667" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598765271639" />
     <state x="2020" y="-912" width="3160" height="1667" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1598722146325">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
     <state x="2020" y="-912" width="3160" height="1667" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598722146325" />
-    <state x="3200" y="-324" width="604" height="490" key="find.popup" timestamp="1598735290885">
+    <state x="3094" y="-308" width="604" height="490" key="find.popup" timestamp="1598812862648">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
-    <state x="3200" y="-324" width="604" height="490" key="find.popup/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598735290885" />
-    <state x="3265" y="-575" width="670" height="676" key="search.everywhere.popup" timestamp="1598723729788">
+    <state x="3094" y="-308" width="604" height="490" key="find.popup/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598812862648" />
+    <state x="3265" y="-575" width="670" height="676" key="search.everywhere.popup" timestamp="1598812568588">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
-    <state x="3265" y="-575" width="670" height="676" key="search.everywhere.popup/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598723729788" />
+    <state x="3265" y="-575" width="670" height="676" key="search.everywhere.popup/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598812568588" />
   </component>
 </project>
