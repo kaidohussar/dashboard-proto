@@ -1,0 +1,41 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+.min-graph-info {
+    cursor: pointer; max-width: 300px; width: 100%; margin-right: $gridunit; padding: $gridunit $gridunit * 2 0; position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        left: 0;
+        top: 15%;
+        height: 70%;
+        background: rgba($color-grey, .5);
+    }
+    &.selected {
+        &:after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background: $color-primary;
+        }
+        .min-graph-info-value { font-size: 52px; font-weight: initial }
+    }
+    &-header {
+        display: flex; justify-content: space-between;
+        &-title {
+            @include label();
+            font-size: 16px;
+            white-space: nowrap;
+            text-transform: uppercase;
+            color: $color-grey-darker;
+        }
+        &-icon {
+            color: $color-primary;
+        }
+    }
+    &-value { font-size: 28px; font-weight: $font-weight-light; }
+}

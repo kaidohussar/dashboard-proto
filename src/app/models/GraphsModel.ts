@@ -9,12 +9,16 @@ export enum GraphType {
 
 export interface IGraphDataMain {
   type: GraphType,
-  isSelected: boolean;
   data: IGraphData[];
 }
 
 export type GraphDataItemType = 'default' | 'config-change';
 export type GraphDataItemUnit = 'ms' | 'kb';
+
+export enum SelectedRangeSides {
+  START = 'START',
+  END = 'END',
+}
 
 export interface IGraphData {
   date: number;
@@ -35,5 +39,7 @@ export interface GraphsModel {
   isFetching: boolean;
   endReached: boolean;
   error: '';
+  selectedGraph: keyof IGraphs | null;
+  selectedRange: { [key in SelectedRangeSides]: number } | null
   graphs: IGraphs | null;
 }

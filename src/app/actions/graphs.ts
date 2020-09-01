@@ -1,7 +1,13 @@
 import { useMemo } from 'react';
 import { Dispatch } from 'redux';
-import { GraphType, IGraphData, IGraphs } from 'app/models';
+import {
+  GraphType,
+  IGraphData,
+  IGraphs,
+  SelectedRangeSides,
+} from 'app/models';
 import { generateMockAverageResponseDelay } from 'app/mock-data-generators';
+import dayjs from 'dayjs';
 
 
 export namespace GraphsActions {
@@ -9,18 +15,19 @@ export namespace GraphsActions {
     FETCH_ALL_GRAPHS_REQUEST = 'FETCH_ALL_GRAPHS_REQUEST',
     FETCH_ALL_GRAPHS_SUCCESS = 'FETCH_ALL_GRAPHS_SUCCESS',
     FETCH_ALL_GRAPHS_FAILURE = 'FETCH_ALL_GRAPHS_FAILURE',
+
+    SET_SELECTED_GRAPH_RANGE = 'SET_SELECTED_GRAPH_RANGE',
   }
   const fetchAllGraphsRequest = () => {
-    console.log('request');
     return {
       type: GraphsActions.Type.FETCH_ALL_GRAPHS_REQUEST,
     }
   }
 
-  const fetchAllGraphsSuccess = (graphs: IGraphs) => {
+  const fetchAllGraphsSuccess = (graphs: IGraphs, selectedGraph: keyof IGraphs, selectedRange: {[key in SelectedRangeSides]: number}) => {
     return {
       type: GraphsActions.Type.FETCH_ALL_GRAPHS_SUCCESS,
-      payload: { graphs },
+      payload: { graphs, selectedGraph, selectedRange },
     }
   }
 
@@ -33,37 +40,54 @@ export namespace GraphsActions {
 
   export const fetchAllGraphs = () => {
     return async function(dispatch: Dispatch) {
-      console.log('dispatch all request');
       dispatch(fetchAllGraphsRequest())
       const fetchAverageResponseDelayData: Promise<IGraphData[]> = generateMockAverageResponseDelay();
-      console.log('fetchAverageResponseDelayData', fetchAverageResponseDelayData);
-      Promise.all([
-        fetchAverageResponseDelayData,
-      ]).then((values) => {
-        console.log('values', values);
+      fetchAverageResponseDelayData.then((values) => {
+        const rangeStart = dayjs().startOf('day').subtract(1, 'day').valueOf();
+        const rangeEnd = values[values.length -1].date;
+        // data only on 'lastQueueSizeData' (proto)
         dispatch(fetchAllGraphsSuccess({
           averageResponseDelayData: {
-            data: values[0],
-            isSelected: false,
+            data: [{
+              date: 0,
+              type: 'default',
+              label: '',
+              value: 23,
+              unit: 'ms',
+            }],
             type: GraphType.AVG_PAYLOAD_SIZE,
           },
           lastQueueSizeData: {
-            data: values[0],
-            isSelected: false,
+            data: values,
             type: GraphType.LAST_QUEUE_SIZE,
           },
           averagePayloadSize: {
-            data: values[0],
-            isSelected: false,
+            data: [{
+              date: 0,
+              type: 'default',
+              label: '',
+              value: 1.35,
+              unit: 'kb',
+            }],
             type: GraphType.AVG_PAYLOAD_SIZE,
           },
           deadLetterQueue: {
-            data: values[0],
-            isSelected: false,
+            data: [{
+              date: 0,
+              type: 'default',
+              label: '',
+              value: 0,
+            }],
             type: GraphType.AVG_PAYLOAD_SIZE,
           }
-        }))
-      }).catch((err) => fetchAllGraphsFailure('error'))
+        },
+            'lastQueueSizeData', // in reality maybe here determine based on received data on what graph to select
+        {
+          [SelectedRangeSides.START]: rangeStart,
+          [SelectedRangeSides.END]: rangeEnd,
+        }
+        ))
+      }).catch(() => fetchAllGraphsFailure('error'))
     }
   }
 }

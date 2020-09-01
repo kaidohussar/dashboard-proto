@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { GraphMainOverview } from 'app/components/Graph/GraphMain/GraphMainOverview';
 import { IGraphs } from 'app/models';
 import { GraphMainSelection } from 'app/components/Graph/GraphMain/GraphMainSelection';
@@ -7,21 +7,25 @@ import { GraphMainRange } from 'app/components/Graph/GraphMain/GraphMainRange';
 export namespace GraphMain {
     export interface Props {
         graphData: IGraphs | null;
+        selectedGraph: keyof IGraphs | null;
     }
 }
 
-export const GraphMain = (props: GraphMain.Props): JSX.Element | null => {
-    console.log('pro')
+export const GraphMain = ({ graphData, selectedGraph }: GraphMain.Props): JSX.Element | null => {
+    const [activeValue, setActiveValue] = useState('');
 
-    if (!props.graphData) {
+    if (!graphData || !selectedGraph) {
         return null;
     }
 
     return (
         <div className="graph-main">
-            <GraphMainSelection />
-            <GraphMainOverview graphdata={props.graphData.averageResponseDelayData}/>
-            <GraphMainRange graphdata={props.graphData.averageResponseDelayData} />
+            <GraphMainSelection activeValue={activeValue} />
+            <GraphMainOverview graphData={graphData[selectedGraph]}/>
+            <GraphMainRange
+                updateActiveValue={(activeValue) => setActiveValue(activeValue ? activeValue.toString() : '')}
+                graphData={graphData[selectedGraph]}
+            />
         </div>
     );
 };

@@ -11,26 +11,25 @@ export namespace Graph {
     }
 }
 
-export const Graph = (props: Graph.Props): JSX.Element => {
+export const Graph = ({}: Graph.Props): JSX.Element => {
+
     const dispatch = useDispatch();
     const graphsActions = useGraphsActions(dispatch);
     const graphsState = useSelector((state: RootState) => state.graphs);
 
-    console.log('isFetchedData', graphsState.isFetching);
     useEffect(() => {
         if (!graphsState.isFetching && !graphsState.endReached) {
             dispatch(graphsActions.fetchAllGraphs())
         }
     }, [graphsState.endReached, dispatch])
-    console.log('graphsState', graphsState);
     // Fetch all graphs related to 'alerting-check-policy-conditions'
 
     return (
         <div className="graphs-wrapper">
             {(graphsState.isFetching || !graphsState.endReached) ? (
                 <ContentLoading />
-            ) : (
-                <GraphMain graphData={graphsState.graphs}/>
+            ) : graphsState.graphs && (
+                <GraphMain selectedGraph={graphsState.selectedGraph} graphData={graphsState.graphs}/>
             )}
         </div>
     );

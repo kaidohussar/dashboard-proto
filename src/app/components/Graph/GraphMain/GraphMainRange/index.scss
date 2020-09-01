@@ -1,6 +1,9 @@
 @import '../../../../../assets/styles/variables';
 
 .graph-main-range {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
     .recharts-responsive-container {
         margin-left: -10px;
     }
