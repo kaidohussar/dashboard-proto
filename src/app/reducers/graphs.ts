@@ -1,6 +1,6 @@
 import { handleActions } from 'redux-actions';
-import { RootState } from './state';
 import { GraphsActions } from 'app/actions/graphs';
+import { RootState } from './state';
 import { GraphsModel } from 'app/models';
 
 const initialState: RootState.GraphsState = {

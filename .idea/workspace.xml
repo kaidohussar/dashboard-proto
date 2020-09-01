@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b9ed9efb-02a0-44f0-bb28-62543f96def8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Graph/GraphMain/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Graph/GraphMain/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/reducers/graphs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/reducers/graphs.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +85,7 @@
       <workItem from="1598686442079" duration="47380000" />
       <workItem from="1598778339977" duration="13546000" />
       <workItem from="1598852155603" duration="56000" />
-      <workItem from="1598887670101" duration="31692000" />
+      <workItem from="1598887670101" duration="31904000" />
     </task>
     <task id="LOCAL-00001" summary="initial push">
       <created>1598735315913</created>
@@ -122,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598936296600</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="up">
+      <created>1598936557848</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1598936557848</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,10 +145,10 @@
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
     <state x="3314" y="-270" key="#com.intellij.fileTypes.FileTypeChooser/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598733390286" />
-    <state x="3171" y="-503" key="CommitChangelistDialog2" timestamp="1598936296432">
+    <state x="3171" y="-503" key="CommitChangelistDialog2" timestamp="1598936557665">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
-    <state x="3171" y="-503" key="CommitChangelistDialog2/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598936296432" />
+    <state x="3171" y="-503" key="CommitChangelistDialog2/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598936557665" />
     <state width="3318" height="736" key="GridCell.Tab.0.bottom" timestamp="1598920052756">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
@@ -158,10 +165,10 @@
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
     <state width="3318" height="736" key="GridCell.Tab.0.right/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598920052755" />
-    <state x="3200" y="-339" key="Vcs.Push.Dialog.v2" timestamp="1598936298175">
+    <state x="3200" y="-339" key="Vcs.Push.Dialog.v2" timestamp="1598936559862">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
-    <state x="3200" y="-339" key="Vcs.Push.Dialog.v2/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598936298175" />
+    <state x="3200" y="-339" key="Vcs.Push.Dialog.v2/1920.-1012.3360.1867/0.23.1920.1141@1920.-1012.3360.1867" timestamp="1598936559862" />
     <state x="2020" y="-912" width="3160" height="1667" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598915107418">
       <screen x="1920" y="-1012" width="3360" height="1867" />
     </state>
