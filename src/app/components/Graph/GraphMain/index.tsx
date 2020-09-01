@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { GraphMainOverview } from 'app/components/Graph/GraphMain/GraphMainOverview';
-import { IGraphs } from 'app/models';
 import { GraphMainSelection } from 'app/components/Graph/GraphMain/GraphMainSelection';
 import { GraphMainRange } from 'app/components/Graph/GraphMain/GraphMainRange';
+import { IGraphs } from 'app/models';
 
 export namespace GraphMain {
     export interface Props {
