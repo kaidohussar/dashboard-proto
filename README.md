@@ -1,7 +1,8 @@
 # Dashboard prototype
 
 Keywords:
-* React
+* TypeScript
+* React hooks
 * Redux
 * Recharts
 
